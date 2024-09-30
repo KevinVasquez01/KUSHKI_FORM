@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pago</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Formulario de KUSHKI</h1>
+        <form id="payment-form">
+            <div class="form-group">
+                <label for="cardName">Nombre en la tarjeta</label>
+                <input type="text" id="name" placeholder="Nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="cardNumber">Número de tarjeta</label>
+                <input type="text" id="number" placeholder="Número de tarjeta" required>
+            </div>
+            <div class="form-group">
+                <label for="expiryMonth">Mes de expiración</label>
+                <input type="text" id="expiryMonth" placeholder="MM" required>
+                <label for="expiryYear">Año de expiración</label>
+                <input type="text" id="expiryYear" placeholder="YY" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVC</label>
+                <input type="text" id="cvv" placeholder="CVC" required>
+            </div>
+            <div class="form-group">
+                <label for="totalAmount">Monto Total</label>
+                <input type="number" id="amount" placeholder="Monto Total" required>
+            </div>
+            <button type="submit">Pagar</button>
+            <!-- Mensajes de resultado -->
+        <div id="response-message" class="hidden"></div>
+        </form>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

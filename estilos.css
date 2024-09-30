@@ -1,0 +1,89 @@
+/* styles.css */
+
+/* Estilo general del body */
+body {
+    font-family: Arial, sans-serif; /* Tipografía */
+    background-color: #f4f4f4; /* Color de fondo suave */
+    margin: 0;
+    padding: 5px; /* Espaciado alrededor del contenido */
+}
+
+
+/* Estilo del formulario */
+#payment-form {
+    background-color: #ffffff; /* Fondo blanco para el formulario */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 40px; /* Espaciado interno */
+    max-width: 400px; /* Ancho máximo del formulario */
+    margin: auto; /* Centramos el formulario en la página */
+    height: 90%;
+}
+
+/* Estilo de los labels */
+label {
+    display: block; /* Cada label en una nueva línea */
+    margin-bottom: 8px; /* Espaciado debajo de cada label */
+    font-weight: bold; /* Negrita para los labels */
+}
+
+/* Estilo de los inputs */
+input[type="text"],
+input[type="number"] {
+    width: 95%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 15px; /* Espaciado debajo de cada input */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 14px; /* Tamaño de fuente */
+}
+
+/* Estilo de los inputs en foco */
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #007bff; /* Cambia el color del borde al enfocar */
+    outline: none; /* Sin contorno */
+}
+
+/* Estilo del botón */
+button {
+    background-color: #007bff; /* Color de fondo azul */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    padding: 10px 15px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+    transition: background-color 0.3s; /* Transición suave al pasar el cursor */
+}
+
+/* Efecto al pasar el cursor sobre el botón */
+button:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el cursor */
+}
+
+/* Estilo del resultado del pago */
+#payment-result {
+    margin-top: 20px; /* Espaciado arriba */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Estilo para mensajes de error */
+#error-message {
+    color: red; /* Color rojo para errores */
+    margin-top: 10px; /* Espaciado arriba */
+}
+/* Estilos para resultado  */
+.hidden {
+    display: none;
+
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+  
